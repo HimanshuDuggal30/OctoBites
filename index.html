@@ -1,0 +1,1405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Octo Bitez Jalandhar | Family Restaurant</title>
+
+  <meta
+    name="description"
+    content="Octo Bitez Jalandhar — family restaurant offering dine-in and takeaway at Shop No 2 New, Janta Colony, Jalandhar, Punjab."
+  />
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family:
+        Inter,
+        ui-sans-serif,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+      background: #fffaf5;
+      color: #211914;
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    button {
+      font: inherit;
+    }
+
+    /* =========================
+       NAVBAR
+    ========================= */
+
+    .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      width: 100%;
+      background: rgba(255, 250, 245, 0.94);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid #eadfd5;
+    }
+
+    .nav-container {
+      max-width: 1180px;
+      margin: auto;
+      min-height: 76px;
+      padding: 0 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 25px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 900;
+      font-size: 22px;
+      letter-spacing: -0.6px;
+    }
+
+    .logo-icon {
+      width: 42px;
+      height: 42px;
+      border-radius: 13px;
+      display: grid;
+      place-items: center;
+      background: #18110e;
+      color: #ffb347;
+      font-size: 21px;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .nav-links a {
+      transition: 0.25s ease;
+    }
+
+    .nav-links a:hover {
+      color: #d66b20;
+    }
+
+    .nav-button {
+      background: #d96d21;
+      color: white;
+      padding: 11px 18px;
+      border-radius: 999px;
+    }
+
+    .nav-button:hover {
+      color: white !important;
+      background: #b95712;
+    }
+
+    .mobile-menu {
+      display: none;
+      border: 0;
+      background: transparent;
+      font-size: 27px;
+      cursor: pointer;
+    }
+
+    /* =========================
+       HERO
+    ========================= */
+
+    .hero {
+      min-height: 680px;
+      display: grid;
+      place-items: center;
+      position: relative;
+      overflow: hidden;
+      background:
+        linear-gradient(
+          90deg,
+          rgba(18, 12, 8, 0.9) 0%,
+          rgba(18, 12, 8, 0.72) 45%,
+          rgba(18, 12, 8, 0.28) 100%
+        ),
+        url("https://lh3.googleusercontent.com/gps-cs-s/AHRPTWl1YLMdph0y9Dm9UjKqb1jCBWcqC_1sFPUMmBaYyA13rAv6a4-RR2bLwGLlfmnFEFAMrzH6qiFVbhrlgdr61ZgOKWJ16aFN8TPCz4kIdyE2Ft1fGl6cGvnUxEhLnSeMMvSoFVkm=w224-h298-k-no")
+        center / cover;
+    }
+
+    .hero-inner {
+      width: min(1180px, 100%);
+      padding: 80px 24px;
+      color: white;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      padding: 8px 13px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 {
+      max-width: 780px;
+      font-size: clamp(45px, 7vw, 82px);
+      line-height: 0.98;
+      letter-spacing: -4px;
+      margin-bottom: 24px;
+    }
+
+    .hero-description {
+      max-width: 650px;
+      color: #f2e8df;
+      font-size: 18px;
+      margin-bottom: 28px;
+    }
+
+    .hero-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 13px;
+      margin-bottom: 32px;
+    }
+
+    .meta-pill {
+      padding: 10px 15px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.17);
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .rating-star {
+      color: #ffb01f;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 13px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 50px;
+      padding: 0 21px;
+      border-radius: 12px;
+      font-size: 14px;
+      font-weight: 800;
+      transition: transform 0.2s ease, background 0.2s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .btn-primary {
+      background: #e27424;
+      color: white;
+    }
+
+    .btn-primary:hover {
+      background: #bd5713;
+    }
+
+    .btn-light {
+      background: white;
+      color: #211914;
+    }
+
+    .btn-light:hover {
+      background: #f4eae1;
+    }
+
+    /* =========================
+       GENERAL
+    ========================= */
+
+    section {
+      padding: 100px 24px;
+    }
+
+    .container {
+      max-width: 1180px;
+      margin: auto;
+    }
+
+    .section-heading {
+      max-width: 700px;
+      margin-bottom: 45px;
+    }
+
+    .section-label {
+      color: #d66b20;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 12px;
+      font-weight: 900;
+      margin-bottom: 9px;
+    }
+
+    .section-heading h2 {
+      font-size: clamp(34px, 5vw, 56px);
+      line-height: 1.04;
+      letter-spacing: -2px;
+      margin-bottom: 14px;
+    }
+
+    .section-heading p {
+      color: #6f625a;
+      font-size: 16px;
+    }
+
+    /* =========================
+       INFO STRIP
+    ========================= */
+
+    .info-strip {
+      background: #211914;
+      color: white;
+      padding: 25px 24px;
+    }
+
+    .info-grid {
+      max-width: 1180px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .info-item {
+      padding: 8px 18px;
+      border-right: 1px solid rgba(255,255,255,0.12);
+    }
+
+    .info-item:last-child {
+      border-right: none;
+    }
+
+    .info-icon {
+      font-size: 23px;
+      margin-bottom: 6px;
+    }
+
+    .info-title {
+      color: #c8bdb5;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 3px;
+    }
+
+    .info-value {
+      font-size: 15px;
+      font-weight: 800;
+    }
+
+    /* =========================
+       ABOUT
+    ========================= */
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 65px;
+      align-items: center;
+    }
+
+    .about-image {
+      height: 520px;
+      border-radius: 28px;
+      overflow: hidden;
+      background: #eee2d7;
+    }
+
+    .about-image img {
+      height: 100%;
+    }
+
+    .about-content p {
+      color: #6f625a;
+      margin-bottom: 18px;
+    }
+
+    .feature-list {
+      list-style: none;
+      display: grid;
+      gap: 13px;
+      margin: 28px 0;
+    }
+
+    .feature-list li {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      font-weight: 700;
+    }
+
+    .check {
+      width: 27px;
+      height: 27px;
+      flex: 0 0 27px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: #f5dcc9;
+      color: #bd5713;
+      font-size: 13px;
+      font-weight: 900;
+    }
+
+    /* =========================
+       MENU
+    ========================= */
+
+    .menu-section {
+      background: #f4ece5;
+    }
+
+    .menu-card {
+      background: white;
+      border-radius: 28px;
+      overflow: hidden;
+      box-shadow: 0 18px 60px rgba(54, 31, 16, 0.09);
+    }
+
+    .menu-image-wrapper {
+      min-height: 620px;
+      padding: 24px;
+      background: #ede3da;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .menu-image-wrapper img {
+      width: min(100%, 850px);
+      max-height: 800px;
+      object-fit: contain;
+      border-radius: 15px;
+    }
+
+    .menu-note {
+      padding: 28px;
+      text-align: center;
+      color: #6f625a;
+      border-top: 1px solid #eee4dc;
+    }
+
+    /* =========================
+       GALLERY
+    ========================= */
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr 0.9fr;
+      grid-template-rows: 300px 300px;
+      gap: 15px;
+    }
+
+    .gallery-item {
+      border-radius: 20px;
+      overflow: hidden;
+      background: #eadfd5;
+      position: relative;
+    }
+
+    .gallery-item:first-child {
+      grid-row: span 2;
+    }
+
+    .gallery-item img {
+      height: 100%;
+      transition: transform 0.5s ease;
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.05);
+    }
+
+    /* =========================
+       REVIEWS
+    ========================= */
+
+    .reviews-section {
+      background: #211914;
+      color: white;
+    }
+
+    .reviews-section .section-heading p {
+      color: #c8bbb1;
+    }
+
+    .review-overview {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+      margin-bottom: 38px;
+    }
+
+    .big-rating {
+      font-size: 65px;
+      line-height: 1;
+      font-weight: 900;
+    }
+
+    .stars {
+      color: #ffb11b;
+      letter-spacing: 3px;
+      font-size: 20px;
+    }
+
+    .review-count {
+      color: #c8bbb1;
+      font-size: 14px;
+    }
+
+    .review-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .review-card {
+      background: #30251f;
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 22px;
+      padding: 27px;
+    }
+
+    .review-card .stars {
+      margin-bottom: 16px;
+    }
+
+    .review-card p {
+      color: #e9ded5;
+      margin-bottom: 20px;
+      font-size: 15px;
+    }
+
+    .review-author {
+      font-weight: 900;
+    }
+
+    .review-time {
+      color: #9f9188;
+      font-size: 12px;
+    }
+
+    /* =========================
+       LOCATION
+    ========================= */
+
+    .location-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+
+    .location-card {
+      background: white;
+      border: 1px solid #e9ddd3;
+      border-radius: 25px;
+      padding: 32px;
+    }
+
+    .location-card h3 {
+      margin-bottom: 14px;
+      font-size: 25px;
+    }
+
+    .location-card p {
+      color: #6f625a;
+      margin-bottom: 12px;
+    }
+
+    .address {
+      font-weight: 700;
+      color: #30241e !important;
+    }
+
+    .map-link {
+      display: inline-flex;
+      margin-top: 12px;
+      color: #c75d16;
+      font-weight: 800;
+    }
+
+    .hours-box {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 1px solid #eee2d9;
+      padding-top: 18px;
+      margin-top: 22px;
+    }
+
+    .open {
+      color: #20834b;
+      font-weight: 900;
+    }
+
+    /* =========================
+       CTA
+    ========================= */
+
+    .cta {
+      padding-top: 40px;
+    }
+
+    .cta-card {
+      background:
+        linear-gradient(120deg, #d8661d, #9d3f0d);
+      color: white;
+      border-radius: 30px;
+      padding: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    .cta-card h2 {
+      font-size: clamp(32px, 5vw, 55px);
+      line-height: 1;
+      letter-spacing: -2px;
+      margin-bottom: 12px;
+    }
+
+    .cta-card p {
+      color: #f8ddd0;
+      max-width: 600px;
+    }
+
+    /* =========================
+       FOOTER
+    ========================= */
+
+    footer {
+      background: #140e0b;
+      color: white;
+      padding: 55px 24px 25px;
+    }
+
+    .footer-grid {
+      max-width: 1180px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 1.4fr 1fr 1fr;
+      gap: 45px;
+      padding-bottom: 40px;
+    }
+
+    .footer-brand p {
+      color: #a99a90;
+      max-width: 420px;
+      margin-top: 15px;
+    }
+
+    .footer-column h4 {
+      margin-bottom: 14px;
+    }
+
+    .footer-column p,
+    .footer-column a {
+      display: block;
+      color: #a99a90;
+      font-size: 14px;
+      margin-bottom: 8px;
+    }
+
+    .footer-bottom {
+      max-width: 1180px;
+      margin: auto;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      padding-top: 20px;
+      color: #81736a;
+      font-size: 13px;
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    /* =========================
+       RESPONSIVE
+    ========================= */
+
+    @media (max-width: 850px) {
+      .nav-links {
+        display: none;
+        position: absolute;
+        top: 76px;
+        left: 0;
+        width: 100%;
+        padding: 20px 24px;
+        background: #fffaf5;
+        border-bottom: 1px solid #eadfd5;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      .mobile-menu {
+        display: block;
+      }
+
+      .info-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .info-item {
+        border-right: none;
+      }
+
+      .about-grid,
+      .location-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .review-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .gallery-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 250px 250px 250px;
+      }
+
+      .gallery-item:first-child {
+        grid-column: span 2;
+        grid-row: auto;
+      }
+
+      .cta-card {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 40px 28px;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 560px) {
+      section {
+        padding: 70px 18px;
+      }
+
+      .nav-container {
+        padding: 0 18px;
+      }
+
+      .logo {
+        font-size: 18px;
+      }
+
+      .logo-icon {
+        width: 37px;
+        height: 37px;
+      }
+
+      .hero {
+        min-height: 620px;
+      }
+
+      .hero-inner {
+        padding: 70px 18px;
+      }
+
+      .hero h1 {
+        font-size: 48px;
+        letter-spacing: -2.5px;
+      }
+
+      .hero-description {
+        font-size: 16px;
+      }
+
+      .info-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .info-item {
+        padding: 8px 4px;
+      }
+
+      .about-image {
+        height: 390px;
+      }
+
+      .menu-image-wrapper {
+        min-height: 450px;
+        padding: 12px;
+      }
+
+      .gallery-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 300px);
+      }
+
+      .gallery-item:first-child {
+        grid-column: auto;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- =========================
+       NAVIGATION
+  ========================== -->
+
+  <header class="navbar">
+    <div class="nav-container">
+
+      <a href="#home" class="logo">
+        <span class="logo-icon">🍴</span>
+        <span>Octo Bitez</span>
+      </a>
+
+      <button
+        class="mobile-menu"
+        id="mobileMenu"
+        aria-label="Open navigation"
+        type="button"
+      >
+        ☰
+      </button>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#location">Location</a>
+        <a
+          href="https://www.google.com/maps/search/?api=1&query=Octo+Bitez+Jalandhar"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="nav-button"
+        >
+          Directions
+        </a>
+      </nav>
+
+    </div>
+  </header>
+
+
+  <!-- =========================
+       HERO
+  ========================== -->
+
+  <main>
+
+    <section class="hero" id="home">
+
+      <div class="hero-inner">
+
+        <div class="eyebrow">
+          🍽️ Family Restaurant · Jalandhar
+        </div>
+
+        <h1>Octo Bitez Jalandhar</h1>
+
+        <p class="hero-description">
+          A family restaurant in Janta Colony, Jalandhar, offering
+          dine-in and takeaway service in a budget-friendly setting.
+        </p>
+
+        <div class="hero-meta">
+
+          <span class="meta-pill">
+            <span class="rating-star">★</span>
+            4.8 · 13 Reviews
+          </span>
+
+          <span class="meta-pill">
+            ₹1–600 per person
+          </span>
+
+          <span class="meta-pill">
+            Dine-in
+          </span>
+
+          <span class="meta-pill">
+            Takeaway
+          </span>
+
+        </div>
+
+        <div class="hero-actions">
+
+          <a
+            href="https://www.google.com/maps/search/?api=1&query=Shop+No+2+New+Janta+Colony+Jalandhar+Punjab+144008"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-primary"
+          >
+            Get Directions
+          </a>
+
+          <a href="#menu" class="btn btn-light">
+            View Menu
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         QUICK INFO
+    ========================== -->
+
+    <div class="info-strip">
+
+      <div class="info-grid">
+
+        <div class="info-item">
+          <div class="info-icon">★</div>
+          <div class="info-title">Rating</div>
+          <div class="info-value">4.8 · 13 reviews</div>
+        </div>
+
+        <div class="info-item">
+          <div class="info-icon">₹</div>
+          <div class="info-title">Price</div>
+          <div class="info-value">₹1–600 per person</div>
+        </div>
+
+        <div class="info-item">
+          <div class="info-icon">🍽️</div>
+          <div class="info-title">Service</div>
+          <div class="info-value">Dine-in & Takeaway</div>
+        </div>
+
+        <div class="info-item">
+          <div class="info-icon">🕙</div>
+          <div class="info-title">Hours</div>
+          <div class="info-value">Open · Closes 10 pm</div>
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- =========================
+         ABOUT
+    ========================== -->
+
+    <section id="about">
+
+      <div class="container about-grid">
+
+        <div class="about-image">
+
+          <img
+            src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWlNCS68kjWhaIke2Z3yzEPHIP6-oZbJ3NBCkJ6cfeKB28gW1xWZe3kSi0lv5ZmglTxF7TnOWIf0aznd0PPHfIIHRrDb0Br1Q8wKAePdH816hJgUBz-ibGKxZzqA8NJ22HNcxgg=w224-h298-k-no"
+            alt="Octo Bitez Jalandhar"
+            onerror="this.style.display='none'"
+          />
+
+        </div>
+
+        <div class="about-content">
+
+          <div class="section-label">About Octo Bitez</div>
+
+          <h2>A budget-friendly family restaurant in Jalandhar.</h2>
+
+          <p>
+            Octo Bitez Jalandhar is a family restaurant located in
+            Janta Colony, Jalandhar, Punjab.
+          </p>
+
+          <p>
+            The restaurant provides both dine-in and takeaway service
+            and is listed at an estimated price range of ₹1–600 per person.
+          </p>
+
+          <ul class="feature-list">
+
+            <li>
+              <span class="check">✓</span>
+              Family restaurant
+            </li>
+
+            <li>
+              <span class="check">✓</span>
+              Dine-in available
+            </li>
+
+            <li>
+              <span class="check">✓</span>
+              Takeaway available
+            </li>
+
+            <li>
+              <span class="check">✓</span>
+              Budget-friendly pricing
+            </li>
+
+          </ul>
+
+          <a
+            href="https://www.google.com/maps/search/?api=1&query=Octo+Bitez+Jalandhar"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-primary"
+          >
+            Find Us on Maps
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         MENU
+    ========================== -->
+
+    <section class="menu-section" id="menu">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <div class="section-label">Our Menu</div>
+
+          <h2>Explore the menu.</h2>
+
+          <p>
+            View the menu image provided for Octo Bitez Jalandhar.
+          </p>
+
+        </div>
+
+        <div class="menu-card">
+
+          <div class="menu-image-wrapper">
+
+            <img
+              src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmkja5N5GirWlacxNeZLGeN4qd0n4mVfzFeTQcp0mplRQc-8Po-IzGXZ-XSNoov45xyKJnlaEvVx1ebx-C_46z3ZMyXFMXtV9LN7-z3D-nJSRe1Z7ogqkuPYW7J6ZZYiWMguwiiO-lomkV=w397-h298-k-no"
+              alt="Octo Bitez Jalandhar menu"
+              onerror="this.style.display='none'"
+            />
+
+          </div>
+
+          <div class="menu-note">
+            Menu image sourced from the restaurant listing details provided.
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         GALLERY
+    ========================== -->
+
+    <section id="gallery">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <div class="section-label">Gallery</div>
+
+          <h2>Inside Octo Bitez.</h2>
+
+          <p>
+            A selection of images from the restaurant listing.
+          </p>
+
+        </div>
+
+        <div class="gallery-grid">
+
+          <div class="gallery-item">
+            <img
+              src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWlNCS68kjWhaIke2Z3yzEPHIP6-oZbJ3NBCkJ6cfeKB28gW1xWZe3kSi0lv5ZmglTxF7TnOWIf0aznd0PPHfIIHRrDb0Br1Q8wKAePdH816hJgUBz-ibGKxZzqA8NJ22HNcxgg=w224-h298-k-no"
+              alt="Octo Bitez restaurant"
+              onerror="this.style.display='none'"
+            />
+          </div>
+
+          <div class="gallery-item">
+            <img
+              src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmkja5N5GirWlacxNeZLGeN4qd0n4mVfzFeTQcp0mplRQc-8Po-IzGXZ-XSNoov45xyKJnlaEvVx1ebx-C_46z3ZMyXFMXtV9LN7-z3D-nJSRe1Z7ogqkuPYW7J6ZZYiWMguwiiO-lomkV=w397-h298-k-no"
+              alt="Octo Bitez menu"
+              onerror="this.style.display='none'"
+            />
+          </div>
+
+          <div class="gallery-item">
+            <img
+              src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWl1YLMdph0y9Dm9UjKqb1jCBWcqC_1sFPUMmBaYyA13rAv6a4-RR2bLwGLlfmnFEFAMrzH6qiFVbhrlgdr61ZgOKWJ16aFN8TPCz4kIdyE2Ft1fGl6cGvnUxEhLnSeMMvSoFVkm=w224-h298-k-no"
+              alt="Octo Bitez food"
+              onerror="this.style.display='none'"
+            />
+          </div>
+
+          <div class="gallery-item">
+            <img
+              src="https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=vXrvpqx7nTEEzv2pfpjZ6Q&cb_client=maps_sv.tactile.gps&w=224&h=298&yaw=43.74332&pitch=0&thumbfov=100"
+              alt="Octo Bitez location"
+              onerror="this.style.display='none'"
+            />
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         REVIEWS
+    ========================== -->
+
+    <section class="reviews-section" id="reviews">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <div class="section-label">Reviews</div>
+
+          <h2>What customers are saying.</h2>
+
+          <p>
+            Customer feedback displayed on the supplied restaurant listing.
+          </p>
+
+        </div>
+
+        <div class="review-overview">
+
+          <div class="big-rating">4.8</div>
+
+          <div>
+            <div class="stars">★★★★★</div>
+            <div class="review-count">13 reviews</div>
+          </div>
+
+        </div>
+
+        <div class="review-grid">
+
+          <article class="review-card">
+
+            <div class="stars">★★★★★</div>
+
+            <p>
+              “Amazing place to celebrate your little life happiness.
+              Within budget yes. Food is delicious: worth the money.”
+            </p>
+
+            <div class="review-author">Kaur Sandhu</div>
+            <div class="review-time">7 months ago</div>
+
+          </article>
+
+          <article class="review-card">
+
+            <div class="stars">★★★★★</div>
+
+            <p>
+              “Good service and all dishes price is very budget friendly
+              and zinci parcel was my favorite dish.”
+            </p>
+
+            <div class="review-author">Surinder Kumar</div>
+            <div class="review-time">2 years ago</div>
+
+          </article>
+
+          <article class="review-card">
+
+            <div class="stars">★★★★★</div>
+
+            <p>
+              “Good service.”
+            </p>
+
+            <div class="review-author">Sabi Saroa</div>
+            <div class="review-time">4 months ago</div>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         LOCATION
+    ========================== -->
+
+    <section id="location">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <div class="section-label">Visit Us</div>
+
+          <h2>Find Octo Bitez.</h2>
+
+          <p>
+            Located in Janta Colony, Jalandhar, Punjab.
+          </p>
+
+        </div>
+
+        <div class="location-grid">
+
+          <div class="location-card">
+
+            <h3>📍 Location</h3>
+
+            <p class="address">
+              Shop No 2 New, Janta Colony,<br />
+              Jalandhar, Punjab 144008
+            </p>
+
+            <p>
+              Located in: Arora General Store
+            </p>
+
+            <p>
+              Plus Code: 9G9W+HV Jalandhar, Punjab
+            </p>
+
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=Shop+No+2+New+Janta+Colony+Jalandhar+Punjab+144008"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="map-link"
+            >
+              Get directions →
+            </a>
+
+          </div>
+
+          <div class="location-card">
+
+            <h3>🕙 Opening Hours</h3>
+
+            <p>
+              The supplied listing shows the restaurant as currently
+              open and closing at 10 pm.
+            </p>
+
+            <div class="hours-box">
+
+              <span>Today</span>
+
+              <span class="open">
+                Open · Closes 10 pm
+              </span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         CTA
+    ========================== -->
+
+    <section class="cta">
+
+      <div class="container">
+
+        <div class="cta-card">
+
+          <div>
+
+            <h2>Visit Octo Bitez.</h2>
+
+            <p>
+              Dine in or take away from Octo Bitez Jalandhar,
+              located in Janta Colony.
+            </p>
+
+          </div>
+
+          <a
+            href="https://maps.app.goo.gl/Jot4fRTQZWHmKKcx8"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-light"
+          >
+            Get Directions
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- =========================
+       FOOTER
+  ========================== -->
+
+  <footer>
+
+    <div class="footer-grid">
+
+      <div class="footer-brand">
+
+        <div class="logo">
+          <span class="logo-icon">🍴</span>
+          <span>Octo Bitez</span>
+        </div>
+
+        <p>
+          Family restaurant in Janta Colony, Jalandhar,
+          offering dine-in and takeaway.
+        </p>
+
+      </div>
+
+      <div class="footer-column">
+
+        <h4>Explore</h4>
+
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#reviews">Reviews</a>
+
+      </div>
+
+      <div class="footer-column">
+
+        <h4>Visit</h4>
+
+        <p>OctoBites,Shop No 2 New, Janta Colony</p>
+        <p>Jalandhar, Punjab 144008</p>
+        <p>Open · Closes 10 pm</p>
+
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+      <span>
+        © <span id="year"></span> Octo Bitez Jalandhar
+      </span>
+
+      <span>
+        Family Restaurant · Jalandhar
+      </span>
+
+    </div>
+
+  </footer>
+
+
+  <script>
+
+    /* Mobile navigation */
+
+    const mobileMenu = document.getElementById("mobileMenu");
+    const navLinks = document.getElementById("navLinks");
+
+    mobileMenu.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+
+    /* Close mobile navigation after clicking a link */
+
+    document.querySelectorAll("#navLinks a").forEach((link) => {
+      link.addEventListener("click", () => {
+        navLinks.classList.remove("active");
+      });
+    });
+
+    /* Current year */
+
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+
+  </script>
+
+</body>
+</html>
